@@ -1,25 +1,13 @@
+# -- stackhawk configuration for test --
 app:
   # -- An applicationId obtained from the StackHawk platform. --
-  applicationId: 32912cd1-2640-4960-afca-b193b04b5642 # (required)
+  applicationId: 49a5145d-8a8e-4c34-b33c-3028f0b9316c # (required)
   # -- The environment for the applicationId defined in the StackHawk platform. --
-  env: Development # (required)
+  env: Pre-Production # (required)
   # -- The url of your application to scan --
-  host: http://3.131.110.202 # (required)
-  antiCsrfParam: ""
-  autoPolicy: false
-  autoInputVectors: false
+  host: http://3.86.202.117 # (required)
+
 hawk:
+  startupTimeoutMinutes: 1
   spider:
     base: false
-    ajax: false
-    maxDurationMinutes: 5
-    ajaxBrowser: FIREFOX_HEADLESS
-  startupTimeoutMinutes: 1
-  failureThreshold: "medium"
-  scan:
-    maxDurationMinutes: "0"
-    maxRuleDurationMinutes: "0"
-    requestDelayMillis: "0"
-    concurrentRequests: "20"
-    throttlePassiveBacklog: "50"
-    policyName: ""
