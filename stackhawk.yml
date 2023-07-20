@@ -1,8 +1,11 @@
 app:
-  host: http://43.204.146.51
+  # -- An applicationId obtained from the StackHawk platform. --
+  applicationId: 32912cd1-2640-4960-afca-b193b04b5642 # (required)
+  # -- The environment for the applicationId defined in the StackHawk platform. --
+  env: Development # (required)
+  # -- The url of your application to scan --
+  host: http://3.131.110.202 # (required)
   antiCsrfParam: ""
-  applicationId: 1ec8b99d-cd1e-4725-90d3-cd07db8820bb
-  env: Development
   autoPolicy: false
   autoInputVectors: false
 hawk:
