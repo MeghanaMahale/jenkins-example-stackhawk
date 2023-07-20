@@ -9,5 +9,4 @@ app:
 
 hawk:
   startupTimeoutMinutes: 1
-  spider:
-    base: false
+  
