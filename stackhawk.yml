@@ -1,12 +1,8 @@
 app:
-  applicationId: 33450769-5e76-455a-9b4b-ec4674a10d6f # (required)
-  env: Pre-Production # (required)
-  host: http://44.204.31.160 # (required)
+  applicationId: 1ec8b99d-cd1e-4725-90d3-cd07db8820bb # (required)
+  env: Development # (required)
+  host: http://43.204.146.51 # (required)
 
-  openApiConf:
-    path: :8080 # OR...
-  autoPolicy: true
-  autoInputVectors: true
 hawk:
   startupTimeoutMinutes: 1
   spider:
