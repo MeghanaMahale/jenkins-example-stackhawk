@@ -1,9 +1,22 @@
 app:
-  applicationId: 1ec8b99d-cd1e-4725-90d3-cd07db8820bb # (required)
-  env: Development # (required)
-  host: http://43.204.146.51 # (required)
-
+  host: http://43.204.146.51
+  antiCsrfParam: ""
+  applicationId: 1ec8b99d-cd1e-4725-90d3-cd07db8820bb
+  env: Development
+  autoPolicy: false
+  autoInputVectors: false
 hawk:
-  startupTimeoutMinutes: 1
   spider:
     base: false
+    ajax: false
+    maxDurationMinutes: 5
+    ajaxBrowser: FIREFOX_HEADLESS
+  startupTimeoutMinutes: 1
+  failureThreshold: "Medium"
+  scan:
+    maxDurationMinutes: "0"
+    maxRuleDurationMinutes: "0"
+    requestDelayMillis: "0"
+    concurrentRequests: "20"
+    throttlePassiveBacklog: "50"
+    policyName: ""
