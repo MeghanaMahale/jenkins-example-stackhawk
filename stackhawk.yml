@@ -1,11 +1,23 @@
-# -- stackhawk configuration for test --
+# -- stackhawk configuration for demo --
 app:
   # -- An applicationId obtained from the StackHawk platform. --
-  applicationId: 49a5145d-8a8e-4c34-b33c-3028f0b9316c # (required)
+  applicationId: 0c558ac1-4e3a-4714-8806-f6dfa0e28bb5 # (required)
   # -- The environment for the applicationId defined in the StackHawk platform. --
-  env: Pre-Production # (required)
+  env: Development # (required)
   # -- The url of your application to scan --
-  host: http://3.86.202.117 # (required)
+  host: http://43.204.146.51 # (required)
+
+
+# -- Customized Configuration for GraphQL/SOAP/OpenAPI, add here --
+  # Configuration Docs: https://docs.stackhawk.com/hawkscan/configuration/
+
+# -- If Authenticated Scanning is needed, add here --
+  # Authenticated Scanning Docs: https://docs.stackhawk.com/hawkscan/authenticated-scanning.html
+  # Authenticated Scanning Repo: https://github.com/kaakaww/scan-configuration/tree/main/Authentication
+
+# -- Help Section --
+  # Docs: https://docs.stackhawk.com/
+  # Contact Support: support@stackhawk.com
 
 hawk:
   startupTimeoutMinutes: 1
