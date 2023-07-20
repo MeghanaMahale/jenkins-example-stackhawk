@@ -12,7 +12,7 @@ hawk:
     maxDurationMinutes: 5
     ajaxBrowser: FIREFOX_HEADLESS
   startupTimeoutMinutes: 1
-  failureThreshold: "Medium"
+  failureThreshold: "medium"
   scan:
     maxDurationMinutes: "0"
     maxRuleDurationMinutes: "0"
